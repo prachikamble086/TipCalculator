@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-section">
+        <div class="Enter-total">
+          <label id="inputTotalLabel" for="inputTotal">Bill</label>
+          <input type="number" id="inputTotal" placeholder="0" />
+        </div>
+        <div>
+          <label id="inputTotalLabel" for="numberPerson"
+            >Enter number of people</label
+          >
+          <input type="number" id="numberPerson" placeholder="0" />
+        </div>
+
+        <div>
+          <label>Select tip % </label>
+          <div class="input-section-button">
+            <button type="button" id="button5">5%</button>
+            <button type="button" id="button10">10%</button>
+            <button type="button" id="button15">15%</button>
+            <button type="button" id="button25">25%</button>
+            <button type="button" id="button50">50%</button>
+
+            <input
+              type="number"
+              id="customInput"
+              placeholder="Custom"
+              class="no-spinners"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="result-section">
+        <div class="result-section-value">
+          <div class="text-input">Total Per Person</div>
+          <div id="result" type="number"></div>
+        </div>
+        <button type="button" id="button">Calculate</button>
+      </div>
+    </div>
+  </body>
+  <script src="index.js"></script>
+</html>
