@@ -1,10 +1,13 @@
 const totalInput = document.getElementById("inputTotal");
 const numOfPeople = document.getElementById("numberPerson");
 
-const calulateButton = document.getElementById("button");
+const calulateButton = document.getElementById("calculate-button");
 const calulateTip5 = document.getElementById("button5");
 const calulateTip10 = document.getElementById("button10");
 const calulateTip15 = document.getElementById("button15");
+const calulateTip25 = document.getElementById("button25");
+const calulateTip50 = document.getElementById("button50");
+
 const customTipInput = document.getElementById("customInput");
 
 const amountPerPerson = document.getElementById("result");
@@ -13,6 +16,8 @@ calulateButton.addEventListener("click", calculateSplitCustomTip);
 calulateTip5.addEventListener("click", () => calculateSplitWithTip(0.05));
 calulateTip10.addEventListener("click", () => calculateSplitWithTip(0.1));
 calulateTip15.addEventListener("click", () => calculateSplitWithTip(0.15));
+calulateTip25.addEventListener("click", () => calculateSplitWithTip(0.25));
+calulateTip50.addEventListener("click", () => calculateSplitWithTip(0.5));
 
 function calculateSplitCustomTip() {
   if (customTipInput.value == "") {
